@@ -59,6 +59,13 @@
                     "Project and delivery management"
                 ],
                 "areaServed": "Worldwide"
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://srp-techconsult.github.io/#website",
+                "name": "Santosh Paskanti | Technical Consultant",
+                "url": "https://srp-techconsult.github.io/",
+                "publisher": {"@id": "https://srp-techconsult.github.io/#person"}
             }
         ]
     }
@@ -99,12 +106,17 @@
             scroll-behavior: smooth;
         }
 
+        section[id] {
+            scroll-margin-top: 90px;
+        }
+
         body {
             margin: 0;
             color: var(--ink);
             background: var(--white);
             font-family: "DM Sans", sans-serif;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         a {
@@ -320,6 +332,13 @@
             align-items: center;
         }
 
+        .hero-grid > *,
+        .value-grid > *,
+        .career-grid > *,
+        .contact-grid > * {
+            min-width: 0;
+        }
+
         .hero h1 {
             max-width: 680px;
             margin: 18px 0 24px;
@@ -493,6 +512,10 @@
 
         .value-section {
             background: var(--cream);
+        }
+
+        .value-section > .trust {
+            margin: -110px 0 110px;
         }
 
         .value-grid {
@@ -905,8 +928,16 @@
         }
 
         @media (max-width: 820px) {
+            section[id] {
+                scroll-margin-top: 82px;
+            }
+
             .section {
                 padding: 78px 0;
+            }
+
+            .value-section > .trust {
+                margin: -78px 0 78px;
             }
 
             .menu-button {
@@ -1134,13 +1165,12 @@
             </div>
         </section>
 
-        <div class="trust">
-            <div class="container trust-list"><span>11+ YEARS</span><span>SAAS & ENTERPRISE</span><span>TECHNICAL
-                    LEADERSHIP</span><span>DELIVERY OWNERSHIP</span><span>PRODUCT-TO-PRODUCTION</span><span>API
-                    ENGINEERING</span></div>
-        </div>
-
         <section id="about" class="section value-section">
+            <div class="trust">
+                <div class="container trust-list"><span>11+ YEARS</span><span>SAAS & ENTERPRISE</span><span>TECHNICAL
+                        LEADERSHIP</span><span>DELIVERY OWNERSHIP</span><span>PRODUCT-TO-PRODUCTION</span><span>API
+                        ENGINEERING</span></div>
+            </div>
             <div class="container value-grid reveal">
                 <h2>Technology problems are rarely just <em>technical.</em></h2>
                 <div>
@@ -1391,12 +1421,7 @@
                         href="https://github.com/srp-techconsult" target="_blank"
                         rel="noopener noreferrer"><span><small>GitHub</small><br>Explore
                             repositories</span><span>-></span></a>
-                    <!-- 
-                            <a class="contact-link"
-                        href="https://srp-techconsult.github.io/" target="_blank"
-                        rel="noopener noreferrer"><span><small>Website</small><br>Visit the live
-                            website</span><span>-></span></a></div> 
-                            -->
+                </div>
                 </div>
         </section>
     </main>
