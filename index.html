@@ -332,10 +332,10 @@
             align-items: center;
         }
 
-        .hero-grid > *,
-        .value-grid > *,
-        .career-grid > *,
-        .contact-grid > * {
+        .hero-grid>*,
+        .value-grid>*,
+        .career-grid>*,
+        .contact-grid>* {
             min-width: 0;
         }
 
@@ -514,7 +514,7 @@
             background: var(--cream);
         }
 
-        .value-section > .trust {
+        .value-section>.trust {
             margin: -110px 0 110px;
         }
 
@@ -868,6 +868,17 @@
             gap: 20px;
         }
 
+        .footer-wrap p {
+            margin: 0;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 8px 18px;
+        }
+
         .footer a:hover {
             color: var(--white);
         }
@@ -936,7 +947,7 @@
                 padding: 78px 0;
             }
 
-            .value-section > .trust {
+            .value-section>.trust {
                 margin: -78px 0 78px;
             }
 
@@ -1070,7 +1081,8 @@
                 display: block;
             }
 
-            .footer-wrap p:last-child {
+            .footer-nav {
+                justify-content: flex-start;
                 margin-top: 8px;
             }
         }
@@ -1212,7 +1224,8 @@
                     </article>
                     <article class="service"><span class="service-number">03</span>
                         <h3>Application Modernization</h3>
-                        <p>Legacy upgrades, containerization, microservices, CI/CD, and cloud migration without guesswork.
+                        <p>Legacy upgrades, containerization, microservices, CI/CD, and cloud migration without
+                            guesswork.
                         </p>
                     </article>
                     <article class="service"><span class="service-number">04</span>
@@ -1422,19 +1435,21 @@
                         rel="noopener noreferrer"><span><small>GitHub</small><br>Explore
                             repositories</span><span>-></span></a>
                 </div>
-                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container footer-wrap">
-            <p>© 2026 Santosh Paskanti. Build. Modernize. Deliver.</p>
-            <p><a href="#services">Services</a> &nbsp; <a href="#about">About</a> &nbsp; <a
-                    href="mailto:santosh.ai.consultant@gmail.com">Email</a> &nbsp; <a
-                    href="https://www.linkedin.com/in/santosh-paskanti-b1155955/" target="_blank"
-                    rel="noopener noreferrer">LinkedIn</a> &nbsp; <a href="https://github.com/srp-techconsult"
-                    target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp; <a
-                    href="https://srp-techconsult.github.io/" target="_blank" rel="noopener noreferrer">Website</a></p>
+            <p>© 2026. All rights reserved.</p>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="mailto:santosh.ai.consultant@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/santosh-paskanti-b1155955/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/srp-techconsult" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
         </div>
     </footer>
     <a class="whatsapp-float"
