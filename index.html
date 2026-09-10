@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Santosh Paskanti provides technical consulting, software development and delivery leadership for practical business outcomes.">
+        content="Santosh Paskanti provides technical consulting, SaaS development, backend and API engineering, application modernization, containerization, cloud, and delivery leadership.">
     <meta name="author" content="Santosh Paskanti">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#17232b">
@@ -15,12 +15,17 @@
     <meta property="og:url" content="https://srp-techconsult.github.io/">
     <meta property="og:title" content="Santosh Paskanti | Technical Consultant">
     <meta property="og:description"
-        content="Technical consulting, software development and delivery leadership for practical business outcomes.">
+        content="Technical consulting, SaaS development, backend and API engineering, application modernization, containerization, cloud, and delivery leadership.">
     <meta property="og:site_name" content="Santosh Paskanti">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Santosh Paskanti | Technical Consultant">
     <meta name="twitter:description"
-        content="Technical consulting, software development and delivery leadership for practical business outcomes.">
+        content="Technical consulting, SaaS development, backend and API engineering, application modernization, containerization, cloud, and delivery leadership.">
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -42,13 +47,14 @@
                 "@id": "https://srp-techconsult.github.io/#service",
                 "name": "Santosh Paskanti Technical Consulting",
                 "url": "https://srp-techconsult.github.io/",
-                "description": "Technical consulting, software development and delivery leadership for practical business outcomes.",
+                "description": "Technical consulting, SaaS development, backend and API engineering, application modernization, containerization, cloud, and delivery leadership.",
                 "provider": {"@id": "https://srp-techconsult.github.io/#person"},
                 "serviceType": [
                     "Technical consulting",
                     "SaaS development",
                     "Backend and API development",
                     "Application modernization",
+                    "Containerization",
                     "Cloud and DevOps",
                     "Project and delivery management"
                 ],
@@ -182,8 +188,7 @@
         .display,
         h1,
         h2,
-        h3,
-        .logo {
+        h3 {
             font-family: "Manrope", sans-serif;
         }
 
@@ -255,14 +260,23 @@
             justify-content: space-between;
         }
 
-        .logo {
-            font-size: 1.05rem;
-            font-weight: 800;
-            letter-spacing: -.03em;
+        .header-logo {
+            width: clamp(128px, 18vw, 170px);
+            max-width: 100%;
+            height: auto;
+            padding: 4px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
         }
 
-        .logo span {
-            color: #5c94b3;
+        .header-logo img {
+            display: block;
+            width: 100%;
+            height: 56px;
+            max-height: 64px;
+            object-fit: contain;
         }
 
         .nav-links {
@@ -988,6 +1002,10 @@
                 width: min(var(--max), calc(100% - 28px));
             }
 
+            .header-logo {
+                width: 132px;
+            }
+
             .hero h1 {
                 font-size: 3.45rem;
             }
@@ -1072,7 +1090,9 @@
     <div class="cursor-dot" aria-hidden="true"></div>
     <header class="site-header">
         <div class="container nav-wrap">
-            <a class="logo" href="#top">Santosh <span>Paskanti</span></a>
+            <a class="header-logo" href="#top" aria-label="Santosh Paskanti, Technical Consultant">
+                <img src="assets/logo_header.svg" alt="SP Technical Consultant">
+            </a>
             <button class="menu-button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
             <nav class="nav-links" aria-label="Main navigation">
                 <a href="#services">Services</a>
@@ -1162,7 +1182,7 @@
                     </article>
                     <article class="service"><span class="service-number">03</span>
                         <h3>Application Modernization</h3>
-                        <p>Legacy upgrades, Dockerization, microservices, CI/CD, and cloud migration without guesswork.
+                        <p>Legacy upgrades, containerization, microservices, CI/CD, and cloud migration without guesswork.
                         </p>
                     </article>
                     <article class="service"><span class="service-number">04</span>
@@ -1312,7 +1332,7 @@
                 <div class="tech-grid reveal">
                     <article class="tech-group">
                         <h3>BACKEND</h3>
-                        <p>PHP / Laravel / CodeIgniter<br>Node.js / Python</p>
+                        <p>PHP / Laravel<br>Node.js / Python</p>
                     </article>
                     <article class="tech-group">
                         <h3>APIs & ARCHITECTURE</h3>
@@ -1370,11 +1390,14 @@
                             LinkedIn</span><span>-></span></a><a class="contact-link"
                         href="https://github.com/srp-techconsult" target="_blank"
                         rel="noopener noreferrer"><span><small>GitHub</small><br>Explore
-                            repositories</span><span>-></span></a><a class="contact-link"
+                            repositories</span><span>-></span></a>
+                    <!-- 
+                            <a class="contact-link"
                         href="https://srp-techconsult.github.io/" target="_blank"
                         rel="noopener noreferrer"><span><small>Website</small><br>Visit the live
-                            website</span><span>-></span></a></div>
-            </div>
+                            website</span><span>-></span></a></div> 
+                            -->
+                </div>
         </section>
     </main>
 
